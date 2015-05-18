@@ -1,0 +1,41 @@
+{
+  "authors": [
+    "Anton Trofimenko <a.trofimenko@mobidev.biz> (http://mobidev.biz/)"
+  ],
+  "contributors": [
+    {
+      "email": "a.trofimenko@mobidev.biz",
+      "name": "Anton Trofimenko"
+    }
+  ],
+  "dependencies": {},
+  "description": "Least Recently Used algorithm",
+  "devDependencies": {
+    "uglifyjs": "*"
+  },
+  "homepage": "https://github.com/Rapid-Application-Development-JS/cachelru",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "keywords": [
+    "cache",
+    "lru"
+  ],
+  "license": "MIT",
+  "main": [
+    "release/cachelru.min.js",
+    "release/cachelru.min.js.map"
+  ],
+  "moduleType": [
+    "globals",
+    "amd",
+    "es6",
+    "node"
+  ],
+  "name": "cachelru",
+  "version": "1.0.0"
+}

@@ -1,2 +1,2 @@
 # cachelru
-Least Recently Used algorithm
+Least Recently Used algorithm.

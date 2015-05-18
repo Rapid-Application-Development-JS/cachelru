@@ -1,0 +1,46 @@
+{
+  "author": "Anton Trofimenko <a.trofimenko@mobidev.biz> (http://mobidev.biz/)",
+  "bugs": {
+    "url": "https://github.com/Rapid-Application-Development-JS/cachelru/issues"
+  },
+  "contributors": [
+    {
+      "email": "a.trofimenko@mobidev.biz",
+      "name": "Anton Trofimenko"
+    }
+  ],
+  "dependencies": {
+  },
+  "description": "Least Recently Used algorithm",
+  "devDependencies": {
+    "uglifyjs": "*"
+  },
+  "directories": {
+    "lib": "source"
+  },
+  "homepage": "https://github.com/Rapid-Application-Development-JS/cachelru",
+  "keywords": [
+    "cache",
+    "lru"
+  ],
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/Rapid-Application-Development-JS/cachelru/blob/master/LICENSE.md"
+  },
+  "main": [
+    "release/cachelru.min.js",
+    "release/cachelru.min.js.map"
+  ],
+  "name": "cachelru",
+  "private": false,
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rapid-Application-Development-JS/cachelru.git"
+  },
+  "scripts": {
+    "build-js": "uglifyjs source/cachelru.js --compress --mangle --screw-ie8 --comments --lint --source-map release/cachelru.min.js.map --output release/cachelru.min.js",
+    "test": "echo \"no test required\" && exit 1"
+  },
+  "version": "1.0.0"
+}
