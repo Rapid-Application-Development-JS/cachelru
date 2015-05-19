@@ -86,6 +86,22 @@
     }
 
     /**
+     * Invokes the given iteratee function <times>.
+     * Each invocation of iteratee is called with an index argument. Produces an array of the returned values.
+     * @param {number} times
+     * @param {Function} iterator
+     * @returns {Array}
+     * @private
+     */
+    function _times(times, iterator) {
+      var accum = new Array(Math.max(0, times));
+      for (var index = 0; index < times; index += 1) {
+        accum[index] = iterator.call();
+      }
+      return accum;
+    }
+
+    /**
      * Removes all entries
      * @public
      */
@@ -202,7 +218,7 @@
         }
         _cacheSize = value;
         if (_currentSize - value) {
-          _.times(_currentSize - value, scope.shift.bind(scope));
+          _times(_currentSize - value, scope.shift.bind(scope));
         }
       }
     });

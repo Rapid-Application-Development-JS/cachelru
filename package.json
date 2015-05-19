@@ -42,5 +42,5 @@
     "build-js": "uglifyjs source/cachelru.js --compress --mangle --screw-ie8 --comments --lint --source-map release/cachelru.min.js.map --output release/cachelru.min.js",
     "test": "echo \"no test required\" && exit 1"
   },
-  "version": "1.0.0"
+  "version": "1.0.1"
 }
